@@ -13,7 +13,7 @@ def read_file(path:str) -> str:
     return ""
 
 
-def read_file_as_list(path:str) -> list[str]:
+def read_file_as_list(path:str) -> list:
     try:
         with open(path, "r", encoding="utf-8") as f:
             lines = f.read()
