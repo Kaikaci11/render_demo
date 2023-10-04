@@ -27,7 +27,7 @@ def read_file_as_list(path:str) -> list:
     return []
 
 
-def read_json(setting:str, path:str="tracking_ids.json") -> dict|list:
+def read_json(setting:str, path:str="tracking_ids.json"):
 
     with open(path, "r", encoding="utf-8") as f:
         data = json.loads(f.read())
